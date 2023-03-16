@@ -199,25 +199,17 @@ function exo18(arr){
 }
 
 function exo19(str){
-    let nombresVoyelles = str.match(/[aeiuo]/gi)
+    let nombresVoyelles = str.match(/[aeiuo]/gi);'
+    
     console.log(nombresVoyelles.length);
 }
 
 function exo20(arr){
     let tab = [];
-    for(let i = 0; i < arr.length; i++){
-        if (arr[i] % 2 === 0){
-            tab.push(arr[i]);
-        } else {
-            console.log('pas de nombre pair !');
-        }
-    }
-    return tab;
+    for(let i = 0; i < arr.length; i++){}
+    
 }
 
-function exo21(str){
-    let string = str.split('');
-    let test = string.reverse();
-    let test2 = test.join('');
-    console.log(test2);
+function exo21(){
+
 }

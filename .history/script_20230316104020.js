@@ -180,44 +180,33 @@ function exo17(arr){
     for (let i = 0; i < n  ; i++){
         let min = i;
         for (let j = i + 1; j < n; j++){
-            if (arr[j] < arr[min]){
+            if (str[j] < str[min]){
                 min = j;
             }
         }
         if (min !== i){
-        let temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        let temp = str[i];
+        str[i] = str[min];
+        str[min] = temp;
         }
     }
-    return arr;
+    console.log(str);
 }
 
 function exo18(arr){
-    let array = exo17(arr);
+    let array = arr.sort();
     console.log(array.slice(-1));
 }
 
 function exo19(str){
-    let nombresVoyelles = str.match(/[aeiuo]/gi)
+    let nombresVoyelles = str.match(/[aeiuo]/gi);
     console.log(nombresVoyelles.length);
 }
 
-function exo20(arr){
-    let tab = [];
-    for(let i = 0; i < arr.length; i++){
-        if (arr[i] % 2 === 0){
-            tab.push(arr[i]);
-        } else {
-            console.log('pas de nombre pair !');
-        }
-    }
-    return tab;
+function exo20(){
+
 }
 
-function exo21(str){
-    let string = str.split('');
-    let test = string.reverse();
-    let test2 = test.join('');
-    console.log(test2);
+function exo21(){
+
 }

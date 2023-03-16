@@ -208,16 +208,11 @@ function exo20(arr){
     for(let i = 0; i < arr.length; i++){
         if (arr[i] % 2 === 0){
             tab.push(arr[i]);
-        } else {
-            console.log('pas de nombre pair !');
         }
     }
-    return tab;
+    return tab[];
 }
 
-function exo21(str){
-    let string = str.split('');
-    let test = string.reverse();
-    let test2 = test.join('');
-    console.log(test2);
+function exo21(){
+
 }

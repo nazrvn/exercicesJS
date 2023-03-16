@@ -190,34 +190,23 @@ function exo17(arr){
         arr[min] = temp;
         }
     }
-    return arr;
+    return arr);
 }
 
 function exo18(arr){
-    let array = exo17(arr);
+    let array = arr.sort();
     console.log(array.slice(-1));
 }
 
 function exo19(str){
-    let nombresVoyelles = str.match(/[aeiuo]/gi)
+    let nombresVoyelles = str.match(/[aeiuo]/gi);
     console.log(nombresVoyelles.length);
 }
 
-function exo20(arr){
-    let tab = [];
-    for(let i = 0; i < arr.length; i++){
-        if (arr[i] % 2 === 0){
-            tab.push(arr[i]);
-        } else {
-            console.log('pas de nombre pair !');
-        }
-    }
-    return tab;
+function exo20(){
+
 }
 
-function exo21(str){
-    let string = str.split('');
-    let test = string.reverse();
-    let test2 = test.join('');
-    console.log(test2);
+function exo21(){
+
 }

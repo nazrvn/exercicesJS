@@ -216,8 +216,6 @@ function exo20(arr){
 }
 
 function exo21(str){
-    let string = str.split('');
-    let test = string.reverse();
-    let test2 = test.join('');
-    console.log(test2);
+let tab = [];
+for
 }

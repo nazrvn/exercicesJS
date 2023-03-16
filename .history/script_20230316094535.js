@@ -170,54 +170,39 @@ function exo16(a, b){
 
 // https://fr.wikipedia.org/wiki/Tri_par_s%C3%A9lection
 
-// '[2, 3, 4, 11, 11, 2, 10,\n]' VQLEUR
-// '[i = 0, j = 1, 2, 3, 4, 5, 6\n]' POSITION
-// '[min = 1, j = 1, 2, 3, 4, 5, 6\n]' POSITION
-// 
-function exo17(arr){
-    let n = arr.length;
-  // n = 7 - 1 caracteres 
-    for (let i = 0; i < n  ; i++){
+
+function exo17(str){
+    let n = str.length;
+    for (let i = 0; i < n - 1; i++){
         let min = i;
         for (let j = i + 1; j < n; j++){
-            if (arr[j] < arr[min]){
+            if (str[j] < str[min]){
                 min = j;
             }
         }
         if (min !== i){
-        let temp = arr[i];
-        arr[i] = arr[min];
-        arr[min] = temp;
+        let temp = str[i];
+        str[i] = str[min];
+        str[min] = temp;
         }
     }
-    return arr;
+    console.log(str);
 }
 
 function exo18(arr){
-    let array = exo17(arr);
+    let array = arr.sort();
     console.log(array.slice(-1));
 }
 
 function exo19(str){
-    let nombresVoyelles = str.match(/[aeiuo]/gi)
+    let nombresVoyelles = str.match(/[aeiuo]/gi);
     console.log(nombresVoyelles.length);
 }
 
-function exo20(arr){
-    let tab = [];
-    for(let i = 0; i < arr.length; i++){
-        if (arr[i] % 2 === 0){
-            tab.push(arr[i]);
-        } else {
-            console.log('pas de nombre pair !');
-        }
-    }
-    return tab;
+function exo20(){
+
 }
 
-function exo21(str){
-    let string = str.split('');
-    let test = string.reverse();
-    let test2 = test.join('');
-    console.log(test2);
+function exo21(){
+
 }
